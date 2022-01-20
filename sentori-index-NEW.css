@@ -1,0 +1,65 @@
+body {
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: large;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+main video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+header img {
+	position: relative;
+	width: 150px;
+	height: 80px;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.slogan {
+	position: absolute;
+	text-align: center;
+    top: 50%;
+    left: 50%;
+	margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.explore{
+	position: relative;
+	color: white;
+	padding: 10px;
+	margin-bottom: 0;
+	background-color: rgb(24, 56, 33);
+	border-radius: 30px;
+}
+
+
+footer {
+	position: absolute;
+	bottom: 0;
+}
+
+li {
+	display: inline;
+	list-style-type: none;
+}
+
+footer ul li a img {
+	width: 30px;
+	height: 30px;
+}
+
+
+

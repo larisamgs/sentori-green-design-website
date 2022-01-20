@@ -1,0 +1,271 @@
+            * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: medium;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: white;
+    }
+    
+    header {
+        display: flex;
+        width: 100%;
+        background-color: rgb(16, 68, 53);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-item-img {
+        height: 100px;
+    }
+    
+    .header-item-img>img {
+        height: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+    
+    .header-img-p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header-items-p1 {
+        color: white;
+    }
+    
+    .header-items-p2 {
+        margin-right: 20px;
+    }
+    
+    #contact-us {
+        font-family: Bradley Hand, cursive;
+        color: rgb(184, 118, 65);
+    }
+    
+    #slogan {
+        font-weight: bold;
+        color: rgb(184, 118, 65);
+    }
+    
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-image: url('images/logos/leavesbg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .flexcontainer {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    .flexbox-1 {
+        background-color: rgb(32, 114, 82);
+        padding: 40px;
+    }
+    
+    .flexbox-1>h2 {
+        color: rgb(219, 206, 198);
+        font-size: 200%;
+        margin-bottom: 25px;
+    }
+    
+    .flexbox-1>p {
+        /*color: rgb(16, 68, 53);*/
+        color: rgb(219, 206, 198);
+        font-size: 120%;
+        margin-bottom: 10px;
+    }
+    
+    a.flexbox-1-links:link,
+    a.flexbox-1-links:visited,
+    a.flexbox-1-links:hover,
+    a.flexbox-1-links:active {
+        font-size: 100%;
+        color: rgb(184, 118, 65);
+    }
+    
+    form {
+        background-color: rgb(32, 114, 82);
+        padding: 40px;
+    }
+    
+    fieldset {
+        padding: 20px;
+        background-color: rgb(32, 114, 82);
+    }
+    
+    legend {
+        font-size: 150%;
+        font-weight: bold;
+        color: rgb(219, 206, 198);
+    }
+    
+    label,
+    labels {
+        display: block;
+    }
+    
+    label {
+        padding-bottom: 5px;
+        font-size: 110%;
+        /*color: rgb(16, 68, 53);*/
+        color: rgb(219, 206, 198);
+    }
+    
+    .labels {
+        padding-bottom: 20px;
+    }
+    
+    .send-btn {
+        text-align: center;
+    }
+    
+    input[type=submit] {
+        padding: 5px 15px;
+        color: rgb(219, 206, 198);
+        background-color: rgb(16, 68, 53);
+        outline: 0;
+    }
+    
+    footer {
+        margin-bottom: 0;
+        position: relative;
+        padding: 10px;
+        font-style: italic;
+        font-size: 90%;
+        width: 100%;
+        color: white;
+        text-align: center;
+        background-color: rgb(32, 114, 82);
+    }
+    
+    @media screen and (max-width: 865px) {
+        section {
+            flex-direction: column;
+        }
+        .flexcontainer {
+            flex-direction: column;
+            height: 800px;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        @media screen and (max-width: 680px) {
+            header {
+                flex-direction: column;
+            }
+            .header-img-p {
+                flex-direction: column;
+            }
+            .header-item-img {
+                height: 70px;
+            }
+            .header-items-p2 {
+                margin-right: 0;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .header-items-p1 p a,
+            .header-items-p2>p {
+                font-size: 90%;
+            }
+            #about-us {
+                font-size: 85%;
+            }
+            .flexbox-1>h2 {
+                font-size: 140%;
+            }
+            .flexbox-1>p {
+                font-size: 100%;
+            }
+            a.flexbox-1-links:link,
+            a.flexbox-1-links:visited,
+            a.flexbox-1-links:hover,
+            a.flexbox-1-links:active {
+                font-size: 100%;
+            }
+            legend {
+                font-size: 140%;
+            }
+            label {
+                font-size: 100%;
+            }
+            footer {
+                font-size: 85%;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            form {
+                padding: 15px;
+            }
+            fieldset {
+                padding: 10px;
+            }
+            label {
+                padding-bottom: 5px;
+            }
+            .labels {
+                padding-bottom: 10px;
+            }
+            input[type=submit] {
+                padding: 5px 10px;
+            }
+        }
+        @media screen and (max-width: 350px) {
+            .header-item-img {
+                height: 55px;
+            }
+            .flexbox-1 {
+                padding: 15px;
+            }
+            .flexbox-1>h2 {
+                font-size: 120%;
+                margin-bottom: 15px;
+            }
+            .flexbox-1>p {
+                font-size: 100%;
+                margin-bottom: 5px;
+            }
+            a.flexbox-1-links:link,
+            a.flexbox-1-links:visited,
+            a.flexbox-1-links:hover,
+            a.flexbox-1-links:active {
+                font-size: 80%;
+            }
+            form {
+                padding: 10px;
+            }
+            fieldset {
+                padding: 10px;
+            }
+            legend {
+                font-size: 100%;
+            }
+            label {
+                padding-bottom: 5px;
+                font-size: 90%;
+            }
+            .labels {
+                padding-bottom: 10px;
+            }
+            input[type=submit] {
+                padding: 5px 10px;
+            }
+            footer {
+                font-size: 80%;
+            }
